@@ -9,10 +9,7 @@ public class player1Movement : MonoBehaviour
     private float moveInput;
     private bool isFacingRight = true;
 
-    public Transform groundCheck;
-    public float groundCheckRadius = 0.2f;
-    public LayerMask groundLayer;
-    private bool isGrounded;
+    public Animator animator;
 
     void Start()
     {
@@ -21,16 +18,15 @@ public class player1Movement : MonoBehaviour
 
     void Update()
     {
-        // Movement input
         moveInput = Input.GetAxis("Horizontal");
 
-        // Check if grounded
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        // Update animation
+        animator.SetFloat("Speed", Mathf.Abs(moveInput));
 
         // Jump
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
 
         // Flip sprite
@@ -46,16 +42,15 @@ public class player1Movement : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Movement
-        rb.linearVelocity = new Vector2(moveInput * speed, rb.linearVelocity.y);
+        rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
     }
 
     void Flip()
     {
         isFacingRight = !isFacingRight;
 
-        Vector3 scaler = transform.localScale;
-        scaler.x *= -1;
-        transform.localScale = scaler;
+        Vector3 scale = transform.localScale;
+        scale.x *= -1;
+        transform.localScale = scale;
     }
 }
