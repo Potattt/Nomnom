@@ -296,7 +296,7 @@ GameObject:
   - component: {fileID: 1107600594}
   - component: {fileID: 1107600593}
   m_Layer: 0
-  m_Name: Square (1)
+  m_Name: bg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -388,7 +388,7 @@ GameObject:
   - component: {fileID: 1602040626}
   - component: {fileID: 1602040625}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
