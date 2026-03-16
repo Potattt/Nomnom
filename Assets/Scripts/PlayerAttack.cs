@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Player1attack : MonoBehaviour
+public class PlayerAttack : MonoBehaviour
 {
     public Animator animator;
 
@@ -15,11 +15,13 @@ public class Player1attack : MonoBehaviour
 
     public float knockbackForce = 8f;
 
+    public KeyCode attackKey;
+
     void Update()
     {
         if (Time.time >= lastAttackTime + attackCooldown)
         {
-            if (Input.GetKeyDown(KeyCode.F))
+            if (Input.GetKeyDown(attackKey))
             {
                 Attack();
                 lastAttackTime = Time.time;
@@ -31,17 +33,22 @@ public class Player1attack : MonoBehaviour
     {
         animator.SetTrigger("Attack");
 
-        Collider2D[] playersHit = Physics2D.OverlapCircleAll(attackPos.position, attackRange, playerLayers);
+        Collider2D[] playersHit = Physics2D.OverlapCircleAll(
+            attackPos.position,
+            attackRange,
+            playerLayers
+        );
 
         foreach (Collider2D player in playersHit)
         {
-            PlayerHealth target = player.GetComponent<PlayerHealth>();
+            if (player.gameObject == gameObject) continue;
 
-            if (target != null)
+            PlayerHealth health = player.GetComponent<PlayerHealth>();
+
+            if (health != null)
             {
-                Vector2 knockDir = (player.transform.position - transform.position).normalized;
-
-                target.TakeDamage(damage, knockDir * knockbackForce);
+                Vector2 dir = (player.transform.position - transform.position).normalized;
+                health.TakeDamage(damage, dir * knockbackForce);
             }
         }
     }
