@@ -7,7 +7,7 @@ public class player1Movement : MonoBehaviour
 
     private Rigidbody2D rb;
     private float moveInput;
-    private bool isFacingRight = true;
+    private bool isFacingRight = false;
 
     public Animator animator;
 
