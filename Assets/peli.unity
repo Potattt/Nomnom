@@ -144,7 +144,7 @@ Transform:
   m_GameObject: {fileID: 286319104}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.101, y: -0.044, z: 0}
+  m_LocalPosition: {x: 0.097, y: -0.044, z: 0}
   m_LocalScale: {x: 0.027723854, y: 0.03319053, z: 0.08836978}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -256,7 +256,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 61.481045
+  orthographic size: 107.88
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -334,6 +334,7 @@ GameObject:
   - component: {fileID: 1020994007}
   - component: {fileID: 1020994006}
   - component: {fileID: 1020994014}
+  - component: {fileID: 1020994015}
   m_Layer: 6
   m_Name: player2
   m_TagString: Player
@@ -356,7 +357,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -402,17 +403,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0034258068, y: -0.045215707}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.32, y: 0.32}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.14406025, y: 0.23070922}
   m_EdgeRadius: 0
 --- !u!95 &1020994008
 Animator:
@@ -424,7 +425,7 @@ Animator:
   m_GameObject: {fileID: 1020994005}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6bc331698f8c9435d91a26e91ffa2f73, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -451,7 +452,7 @@ MonoBehaviour:
   animator: {fileID: 1020994008}
   attackPos: {fileID: 1682462071}
   attackRange: 20
-  damage: 4
+  damage: 2
   attackCooldown: 0.4
   playerLayers:
     serializedVersion: 2
@@ -471,6 +472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   health: 10
+  isInvincible: 0
 --- !u!212 &1020994012
 SpriteRenderer:
   serializedVersion: 2
@@ -520,8 +522,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.24003203, g: 0.5849056, b: 0.2973038, a: 1}
+  m_Sprite: {fileID: -3993738424730604005, guid: e9a1be56ba5924fa09eb91094dab40ef, type: 3}
+  m_Color: {r: 1, g: 0, b: 0.019385815, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -539,8 +541,8 @@ Transform:
   m_GameObject: {fileID: 1020994005}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 84.2, y: -14.6, z: 0}
-  m_LocalScale: {x: 8.423938, y: 45.047005, z: 6.1265}
+  m_LocalPosition: {x: 132, y: -38, z: 0}
+  m_LocalScale: {x: 137.0565, y: 267.13528, z: 37.2626}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1929002813}
@@ -560,7 +562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   speed: 40
-  jumpForce: 40
+  jumpForce: 100
   leftKey: 276
   rightKey: 275
   jumpKey: 273
@@ -570,6 +572,20 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+--- !u!114 &1020994015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020994005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 700af297e74b04def944ffd24eea1cec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Shielding
+  shieldTime: 3
+  shieldKey: 257
 --- !u!1 &1133149143
 GameObject:
   m_ObjectHideFlags: 0
@@ -656,8 +672,8 @@ Transform:
   m_GameObject: {fileID: 1133149143}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.25386, y: -46.8, z: 0}
-  m_LocalScale: {x: 255.87158, y: 16.017, z: 16.017}
+  m_LocalPosition: {x: -10.254, y: -91.2, z: 0}
+  m_LocalScale: {x: 427.48734, y: 16.017, z: 16.017}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -733,7 +749,7 @@ Transform:
   m_GameObject: {fileID: 1682462070}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.12, y: 0.01, z: 0}
+  m_LocalPosition: {x: -0.167, y: -0.029, z: 0}
   m_LocalScale: {x: 0.11870932, y: 0.022199033, z: 0.16322532}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -764,7 +780,7 @@ Transform:
   m_GameObject: {fileID: 1929002812}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.2, y: -0.502, z: 0}
+  m_LocalPosition: {x: -0.0593, y: -0.1622, z: 0}
   m_LocalScale: {x: 4.2818475, y: 0.66883636, z: 1.8470718}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -786,6 +802,7 @@ GameObject:
   - component: {fileID: 1948295386}
   - component: {fileID: 1948295385}
   - component: {fileID: 1948295393}
+  - component: {fileID: 1948295394}
   m_Layer: 6
   m_Name: player1
   m_TagString: Player
@@ -828,6 +845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   health: 10
+  isInvincible: 0
 --- !u!114 &1948295387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -911,7 +929,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -991,7 +1009,7 @@ Transform:
   m_GameObject: {fileID: 1948295384}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -110, y: -8, z: 0}
+  m_LocalPosition: {x: -139, y: -48, z: 0}
   m_LocalScale: {x: 218.1154, y: 182.19052, z: 68.42837}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1012,7 +1030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   speed: 80
-  jumpForce: 60
+  jumpForce: 100
   leftKey: 97
   rightKey: 100
   jumpKey: 119
@@ -1022,6 +1040,20 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+--- !u!114 &1948295394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948295384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 700af297e74b04def944ffd24eea1cec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Shielding
+  shieldTime: 2.5
+  shieldKey: 101
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

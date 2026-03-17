@@ -12,7 +12,6 @@ public class PlayerAttack : MonoBehaviour
     private float lastAttackTime;
 
     public LayerMask playerLayers;
-
     public float knockbackForce = 8f;
 
     public KeyCode attackKey;

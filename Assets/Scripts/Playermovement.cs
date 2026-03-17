@@ -14,9 +14,8 @@ public class PlayerMovement : MonoBehaviour
 
     public Transform attackPos;
 
-    // NEW GROUND CHECK
     public Transform groundCheck;
-    public float groundCheckRadius = 0.2f;
+    public float groundCheckRadius = 0.3f;
     public LayerMask groundLayer;
     private bool isGrounded;
 
@@ -44,22 +43,29 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(jumpKey) && isGrounded)
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
 
-        if (move < 0 && !isFacingRight) Flip();
-        if (move > 0 && isFacingRight) Flip();
+        if (move > 0 && !isFacingRight) Flip();
+        if (move < 0 && isFacingRight) Flip();
     }
 
     void Flip()
+{
+    isFacingRight = !isFacingRight;
+
+    // Flip player
+    Vector3 scale = transform.localScale;
+    scale.x *= -1;
+    transform.localScale = scale;
+
+    if (attackPos != null)
     {
-        isFacingRight = !isFacingRight;
-
-        Vector3 scale = transform.localScale;
-        scale.x *= -1;
-        transform.localScale = scale;
-
-        Vector3 pos = attackPos.localPosition;
-        pos.x *= -1;
-        attackPos.localPosition = pos;
+        float offset = Mathf.Abs(attackPos.localPosition.x);
+        attackPos.localPosition = new Vector3(
+            isFacingRight ? offset : -offset,
+            attackPos.localPosition.y,
+            attackPos.localPosition.z
+        );
     }
+}
 
     void OnDrawGizmosSelected()
     {
