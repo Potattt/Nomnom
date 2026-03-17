@@ -17,7 +17,7 @@ public class PlayerHealth : MonoBehaviour
     {
         health -= damage;
 
-        rb.velocity = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
         rb.AddForce(knockback, ForceMode2D.Impulse);
 
         animator.SetTrigger("Hit");
