@@ -14,7 +14,6 @@ public class PlayerMovement : MonoBehaviour
 
     public Transform attackPos;
 
-    // Ground check
     public Transform groundCheck;
     public float groundCheckRadius = 0.3f;
     public LayerMask groundLayer;
@@ -44,7 +43,6 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(jumpKey) && isGrounded)
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
 
-        // Flip logic
         if (move > 0 && !isFacingRight) Flip();
         if (move < 0 && isFacingRight) Flip();
     }
@@ -58,7 +56,6 @@ public class PlayerMovement : MonoBehaviour
     scale.x *= -1;
     transform.localScale = scale;
 
-    // FORCE correct world offset
     if (attackPos != null)
     {
         float offset = Mathf.Abs(attackPos.localPosition.x);
