@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     public int health = 10;
-
+    public bool isInvincible = false;
     private Rigidbody2D rb;
     private Animator animator;
 
@@ -14,19 +14,21 @@ public class PlayerHealth : MonoBehaviour
     }
 
     public void TakeDamage(int damage, Vector2 knockback)
+{
+    if (isInvincible) return;
+
+    health -= damage;
+
+    rb.velocity = Vector2.zero;
+    rb.AddForce(knockback, ForceMode2D.Impulse);
+
+    animator.SetTrigger("Hit");
+
+    if (health <= 0)
     {
-        health -= damage;
-
-        rb.linearVelocity = Vector2.zero;
-        rb.AddForce(knockback, ForceMode2D.Impulse);
-
-        animator.SetTrigger("Hit");
-
-        if (health <= 0)
-        {
-            Die();
-        }
+        Die();
     }
+}
 
     void Die()
     {
