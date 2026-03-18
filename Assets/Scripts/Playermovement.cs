@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D rb;
     private bool isFacingRight = true;
-
+private float attackPosStartX;
     public Transform attackPos;
 
     public Transform groundCheck;
@@ -20,9 +20,12 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded;
 
     void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
+{
+    rb = GetComponent<Rigidbody2D>();
+
+    if (attackPos != null)
+        attackPosStartX = attackPos.localPosition.x;
+}
 
     void Update()
     {
@@ -51,20 +54,9 @@ public class PlayerMovement : MonoBehaviour
 {
     isFacingRight = !isFacingRight;
 
-    // Flip player
     Vector3 scale = transform.localScale;
     scale.x *= -1;
     transform.localScale = scale;
-
-    if (attackPos != null)
-    {
-        float offset = Mathf.Abs(attackPos.localPosition.x);
-        attackPos.localPosition = new Vector3(
-            isFacingRight ? offset : -offset,
-            attackPos.localPosition.y,
-            attackPos.localPosition.z
-        );
-    }
 }
 
     void OnDrawGizmosSelected()
