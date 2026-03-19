@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int health = 10;
+    public int health = 7;
     public bool isInvincible = false;
     private Rigidbody2D rb;
     private Animator animator;

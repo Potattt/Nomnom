@@ -2,30 +2,15 @@ using UnityEngine;
 
 public class HealthManager : MonoBehaviour
 {
-    [Header("Health Settings")]
-    public int maxHealth = 5;
+    public int maxHealth = 6;
     private int currentHealth;
-
-    [Header("Sprites (Assign in Inspector)")]
-    public Sprite[] burgerSprites; // drag your burger stages here
-
-    private SpriteRenderer spriteRenderer;
+    public Sprite[] burgerSprites; // 6 or 7 sprites (your choice)
+    public SpriteRenderer burgerRenderer; // drag Burger object here
 
     void Start()
     {
         currentHealth = maxHealth;
-        spriteRenderer = GetComponent<SpriteRenderer>();
-
         UpdateBurgerVisual();
-    }
-
-    void Update()
-    {
-        // TEST: press Space to take damage
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            TakeDamage(1);
-        }
     }
 
     public void TakeDamage(int amount)
@@ -39,7 +24,7 @@ public class HealthManager : MonoBehaviour
 
         if (currentHealth == 0)
         {
-            Debug.Log("Burger fully eaten!");
+            Debug.Log(gameObject.name + " is dead");
         }
     }
 
@@ -47,9 +32,12 @@ public class HealthManager : MonoBehaviour
     {
         int index = maxHealth - currentHealth;
 
+        if (index < 0)
+            index = 0;
+
         if (index >= burgerSprites.Length)
             index = burgerSprites.Length - 1;
 
-        spriteRenderer.sprite = burgerSprites[index];
+        burgerRenderer.sprite = burgerSprites[index];
     }
 }
