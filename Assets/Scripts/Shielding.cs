@@ -5,23 +5,31 @@ public class Shielding : MonoBehaviour
     public float shieldTime = 3f;
     private float shieldTimer;
 
+    public float shieldCooldown = 2f;
+    private float lastShieldTime;
+
     public KeyCode shieldKey;
 
     private bool isShielding;
 
     private PlayerHealth health;
     private Animator animator;
+    private PlayerAttack attackScript;
 
     void Start()
     {
         health = GetComponent<PlayerHealth>();
         animator = GetComponent<Animator>();
+        attackScript = GetComponent<PlayerAttack>();
     }
 
     void Update()
     {
-        // Activate shield
-        if (Input.GetKeyDown(shieldKey) && !isShielding)
+        // Activate shield (with cooldown + cannot shield while attacking)
+        if (Input.GetKeyDown(shieldKey) &&
+            !isShielding &&
+            Time.time >= lastShieldTime + shieldCooldown &&
+            !attackScript.IsAttacking())
         {
             ActivateShield();
         }
@@ -42,6 +50,7 @@ public class Shielding : MonoBehaviour
     {
         isShielding = true;
         shieldTimer = shieldTime;
+        lastShieldTime = Time.time;
 
         health.isInvincible = true;
         animator.SetBool("Shield", true);
@@ -53,5 +62,11 @@ public class Shielding : MonoBehaviour
 
         health.isInvincible = false;
         animator.SetBool("Shield", false);
+    }
+
+    // 👇 allow other scripts to check
+    public bool IsShielding()
+    {
+        return isShielding;
     }
 }

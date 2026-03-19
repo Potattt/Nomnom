@@ -16,8 +16,20 @@ public class PlayerAttack : MonoBehaviour
 
     public KeyCode attackKey;
 
+    private bool isAttacking;
+
+    private Shielding shieldScript;
+
+    void Start()
+    {
+        shieldScript = GetComponent<Shielding>();
+    }
+
     void Update()
     {
+        if (shieldScript != null && shieldScript.IsShielding())
+            return;
+
         if (Time.time >= lastAttackTime + attackCooldown)
         {
             if (Input.GetKeyDown(attackKey))
@@ -30,6 +42,8 @@ public class PlayerAttack : MonoBehaviour
 
     void Attack()
     {
+        isAttacking = true;
+
         animator.SetTrigger("Attack");
 
         Collider2D[] playersHit = Physics2D.OverlapCircleAll(
@@ -50,6 +64,20 @@ public class PlayerAttack : MonoBehaviour
                 health.TakeDamage(damage, dir * knockbackForce);
             }
         }
+
+        // Reset attack state after short time
+        Invoke(nameof(ResetAttack), 0.2f);
+    }
+
+    void ResetAttack()
+    {
+        isAttacking = false;
+    }
+
+    // 👇 used by Shield script
+    public bool IsAttacking()
+    {
+        return isAttacking;
     }
 
     void OnDrawGizmosSelected()
