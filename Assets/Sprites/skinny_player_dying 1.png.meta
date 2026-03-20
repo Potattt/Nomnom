@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: b8d4758268c8448718802db14be3bd13
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6946107285277043691
+    second: skinny_player_dying 1_0
+  - first:
+      213: 6334748215357072716
+    second: skinny_player_dying 1_1
+  - first:
+      213: -7466558019494376421
+    second: skinny_player_dying 1_2
+  - first:
+      213: 6569952854656100475
+    second: skinny_player_dying 1_3
+  - first:
+      213: 8791195933636237184
+    second: skinny_player_dying 1_4
+  - first:
+      213: -567556119565373183
+    second: skinny_player_dying 1_5
+  - first:
+      213: -7514964521853774488
+    second: skinny_player_dying 1_6
+  - first:
+      213: -2549284061741239168
+    second: skinny_player_dying 1_7
+  - first:
+      213: -3162397207904789928
+    second: skinny_player_dying 1_8
+  - first:
+      213: 838917158579119600
+    second: skinny_player_dying 1_9
+  - first:
+      213: -6462801184189882906
+    second: skinny_player_dying 1_10
+  - first:
+      213: -3696473818983993504
+    second: skinny_player_dying 1_11
+  - first:
+      213: -2758663301256105096
+    second: skinny_player_dying 1_12
+  - first:
+      213: -7452015045237795433
+    second: skinny_player_dying 1_13
+  - first:
+      213: -485555175233891297
+    second: skinny_player_dying 1_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skinny_player_dying 1_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 43
+        width: 22
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5141f41e9387a9f90800000000000000
+      internalID: -6946107285277043691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skinny_player_dying 1_1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 65
+        width: 24
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c45e5ed50fb89e750800000000000000
+      internalID: 6334748215357072716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skinny_player_dying 1_2
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 87
+        width: 22
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1c81317a05716890800000000000000
+      internalID: -7466558019494376421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skinny_player_dying 1_3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 63
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7827dcef492d2b50800000000000000
+      internalID: 6569952854656100475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skinny_player_dying 1_4
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 87
+        width: 20
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0871f37bf1a900a70800000000000000
+      internalID: 8791195933636237184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skinny_player_dying 1_5
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 87
+        width: 19
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 101f43f57b2af18f0800000000000000
+      internalID: -567556119565373183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skinny_player_dying 1_6
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 43
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8651e37559b75b790800000000000000
+      internalID: -7514964521853774488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skinny_player_dying 1_7
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 43
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 084395c07af1f9cd0800000000000000
+      internalID: -2549284061741239168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skinny_player_dying 1_8
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 43
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85ad5289e78ec14d0800000000000000
+      internalID: -3162397207904789928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skinny_player_dying 1_9
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 43
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f5a61106be64ab00800000000000000
+      internalID: 838917158579119600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skinny_player_dying 1_10
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 0
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ed536a70948f46a0800000000000000
+      internalID: -6462801184189882906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skinny_player_dying 1_11
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 0
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06f6de975ac73bcc0800000000000000
+      internalID: -3696473818983993504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skinny_player_dying 1_12
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 0
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87339b1f75247b9d0800000000000000
+      internalID: -2758663301256105096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skinny_player_dying 1_13
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 0
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7951cbf7ccf159890800000000000000
+      internalID: -7452015045237795433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skinny_player_dying 1_14
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 0
+        width: 29
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f14d4550426f249f0800000000000000
+      internalID: -485555175233891297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      skinny_player_dying 1_0: -6946107285277043691
+      skinny_player_dying 1_1: 6334748215357072716
+      skinny_player_dying 1_10: -6462801184189882906
+      skinny_player_dying 1_11: -3696473818983993504
+      skinny_player_dying 1_12: -2758663301256105096
+      skinny_player_dying 1_13: -7452015045237795433
+      skinny_player_dying 1_14: -485555175233891297
+      skinny_player_dying 1_2: -7466558019494376421
+      skinny_player_dying 1_3: 6569952854656100475
+      skinny_player_dying 1_4: 8791195933636237184
+      skinny_player_dying 1_5: -567556119565373183
+      skinny_player_dying 1_6: -7514964521853774488
+      skinny_player_dying 1_7: -2549284061741239168
+      skinny_player_dying 1_8: -3162397207904789928
+      skinny_player_dying 1_9: 838917158579119600
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

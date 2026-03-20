@@ -1,49 +1,19 @@
 fileFormatVersion: 2
-guid: e45e4fd1a9f5a4d039ea2ee01546a523
+guid: 821b36cebc97e4f688d62545eb20b56a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 281711911966439555
-    second: skinny_player_attack1_0
+      213: 6260047595464240682
+    second: skinny_player_attack1 (1)_0
   - first:
-      213: -8256322069598503845
-    second: skinny_player_attack1_1
+      213: 6718249424994334240
+    second: skinny_player_attack1 (1)_1
   - first:
-      213: 5739960830987260164
-    second: skinny_player_attack1_2
+      213: -7883149771006756563
+    second: skinny_player_attack1 (1)_2
   - first:
-      213: -6119781779223390393
-    second: skinny_player_attack1_3
-  - first:
-      213: 2050164049771478999
-    second: skinny_player_attack1_4
-  - first:
-      213: -8543963307946619027
-    second: skinny_player_attack1_5
-  - first:
-      213: 3031900692756724984
-    second: skinny_player_attack1_6
-  - first:
-      213: -6360587572898928163
-    second: skinny_player_attack1_7
-  - first:
-      213: 8629615873717372547
-    second: skinny_player_attack1_8
-  - first:
-      213: 4726934587368601254
-    second: skinny_player_attack1_9
-  - first:
-      213: 1731660781047202891
-    second: skinny_player_attack1_10
-  - first:
-      213: -940932164042044212
-    second: skinny_player_attack1_11
-  - first:
-      213: -6880735647021474313
-    second: skinny_player_attack1_12
-  - first:
-      213: 4326702089812522127
-    second: skinny_player_attack1_13
+      213: -4373568512160789366
+    second: skinny_player_attack1 (1)_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -114,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -152,309 +122,353 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: skinny_player_attack1_0
+      name: skinny_player_attack1 (1)_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 167
-        width: 25
-        height: 46
+        x: 0
+        y: 132
+        width: 44
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 38871c9cd77d8e300800000000000000
-      internalID: 281711911966439555
+      spriteID: a2e2fa4fe1820e650800000000000000
+      internalID: 6260047595464240682
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skinny_player_attack1_1
+      name: skinny_player_attack1 (1)_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 167
-        width: 25
-        height: 46
+        x: 44
+        y: 132
+        width: 44
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b5cfc5252d6ab6d80800000000000000
-      internalID: -8256322069598503845
+      spriteID: 0267249d1440c3d50800000000000000
+      internalID: 6718249424994334240
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skinny_player_attack1_2
+      name: skinny_player_attack1 (1)_2
       rect:
         serializedVersion: 2
-        x: 120
-        y: 167
-        width: 23
-        height: 46
+        x: 88
+        y: 132
+        width: 44
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 401d6a3d6ff68af40800000000000000
-      internalID: 5739960830987260164
+      spriteID: d29b0fbcc0d699290800000000000000
+      internalID: -7883149771006756563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skinny_player_attack1_3
+      name: skinny_player_attack1 (1)_3
       rect:
         serializedVersion: 2
-        x: 176
-        y: 167
-        width: 25
-        height: 46
+        x: 132
+        y: 132
+        width: 44
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7475b7255ea221ba0800000000000000
-      internalID: -6119781779223390393
+      spriteID: a8c82df3c96fd43c0800000000000000
+      internalID: -4373568512160789366
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skinny_player_attack1_4
+      name: skinny_player_attack1 (1)_4
       rect:
         serializedVersion: 2
-        x: 8
-        y: 111
-        width: 26
-        height: 46
+        x: 0
+        y: 88
+        width: 44
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7dfb7ed4755a37c10800000000000000
-      internalID: 2050164049771478999
+      spriteID: d6545855a5fba48ffac3ee831e509ea0
+      internalID: -1533285415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skinny_player_attack1_5
+      name: skinny_player_attack1 (1)_5
       rect:
         serializedVersion: 2
-        x: 64
-        y: 111
-        width: 26
-        height: 46
+        x: 44
+        y: 88
+        width: 44
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d6fced7a3aebd6980800000000000000
-      internalID: -8543963307946619027
+      spriteID: b631072e84be34c89b216b44c720338c
+      internalID: -1309639898
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skinny_player_attack1_6
+      name: skinny_player_attack1 (1)_6
       rect:
         serializedVersion: 2
-        x: 120
-        y: 111
-        width: 27
-        height: 46
+        x: 88
+        y: 88
+        width: 44
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8fc760acd99731a20800000000000000
-      internalID: 3031900692756724984
+      spriteID: 8527b8fb2a13d46e9b893b65c3501270
+      internalID: 2050282259
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skinny_player_attack1_7
+      name: skinny_player_attack1 (1)_7
       rect:
         serializedVersion: 2
-        x: 176
-        y: 111
-        width: 29
-        height: 46
+        x: 132
+        y: 88
+        width: 44
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: dd968926d47aab7a0800000000000000
-      internalID: -6360587572898928163
+      spriteID: a0a48aa04d4e54a86bae3e71509cbfe8
+      internalID: 1531304653
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skinny_player_attack1_8
+      name: skinny_player_attack1 (1)_8
       rect:
         serializedVersion: 2
-        x: 8
-        y: 55
-        width: 34
-        height: 46
+        x: 0
+        y: 44
+        width: 44
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3860ffc5aed82c770800000000000000
-      internalID: 8629615873717372547
+      spriteID: 42b2ea5de2bf44f67b5a40fbb323cf72
+      internalID: 23772922
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skinny_player_attack1_9
+      name: skinny_player_attack1 (1)_9
       rect:
         serializedVersion: 2
-        x: 64
-        y: 55
-        width: 40
-        height: 46
+        x: 44
+        y: 44
+        width: 44
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6a6fc9c76f1799140800000000000000
-      internalID: 4726934587368601254
+      spriteID: 06a13d16f74f84296af2c3ba60c67499
+      internalID: 1640446263
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skinny_player_attack1_10
+      name: skinny_player_attack1 (1)_10
       rect:
         serializedVersion: 2
-        x: 120
-        y: 55
-        width: 29
-        height: 46
+        x: 88
+        y: 44
+        width: 44
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b444bcd3e48180810800000000000000
-      internalID: 1731660781047202891
+      spriteID: 6dc0dc3b1b0a34e91b18f2ee46951495
+      internalID: 1239558414
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skinny_player_attack1_11
+      name: skinny_player_attack1 (1)_11
       rect:
         serializedVersion: 2
-        x: 176
-        y: 55
-        width: 25
-        height: 46
+        x: 132
+        y: 44
+        width: 44
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cccc88c9e2321f2f0800000000000000
-      internalID: -940932164042044212
+      spriteID: 793b62ab52a1a487d829ef2b60b291fb
+      internalID: -125558151
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skinny_player_attack1_12
+      name: skinny_player_attack1 (1)_12
       rect:
         serializedVersion: 2
-        x: 8
+        x: 0
         y: 0
-        width: 23
-        height: 45
+        width: 44
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7fddaed7267b280a0800000000000000
-      internalID: -6880735647021474313
+      spriteID: b2266574b47c14ae9aa97ff055259228
+      internalID: 333513420
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skinny_player_attack1_13
+      name: skinny_player_attack1 (1)_13
       rect:
         serializedVersion: 2
-        x: 64
+        x: 44
         y: 0
-        width: 25
-        height: 45
+        width: 44
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f84373870a88b0c30800000000000000
-      internalID: 4326702089812522127
+      spriteID: 3c18fe9344f574fe48209179ce7f2be5
+      internalID: 412426635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skinny_player_attack1 (1)_14
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 772bc90e0dd954905a2426f5ff02436c
+      internalID: 2119072397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skinny_player_attack1 (1)_15
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6c95bb5449474fd78513f9692333cbb
+      internalID: 477511973
       vertices: []
       indices: 
       edges: []
@@ -463,7 +477,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7ad02583dbb264d33907fda618e5f068
     internalID: 0
     vertices: []
     indices: 
@@ -471,22 +485,26 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":4.0},"gridSpriteSize":{"x":44.0,"y":44.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      skinny_player_attack1_0: 281711911966439555
-      skinny_player_attack1_1: -8256322069598503845
-      skinny_player_attack1_10: 1731660781047202891
-      skinny_player_attack1_11: -940932164042044212
-      skinny_player_attack1_12: -6880735647021474313
-      skinny_player_attack1_13: 4326702089812522127
-      skinny_player_attack1_2: 5739960830987260164
-      skinny_player_attack1_3: -6119781779223390393
-      skinny_player_attack1_4: 2050164049771478999
-      skinny_player_attack1_5: -8543963307946619027
-      skinny_player_attack1_6: 3031900692756724984
-      skinny_player_attack1_7: -6360587572898928163
-      skinny_player_attack1_8: 8629615873717372547
-      skinny_player_attack1_9: 4726934587368601254
+      skinny_player_attack1 (1)_0: 6260047595464240682
+      skinny_player_attack1 (1)_1: 6718249424994334240
+      skinny_player_attack1 (1)_10: 1239558414
+      skinny_player_attack1 (1)_11: -125558151
+      skinny_player_attack1 (1)_12: 333513420
+      skinny_player_attack1 (1)_13: 412426635
+      skinny_player_attack1 (1)_14: 2119072397
+      skinny_player_attack1 (1)_15: 477511973
+      skinny_player_attack1 (1)_2: -7883149771006756563
+      skinny_player_attack1 (1)_3: -4373568512160789366
+      skinny_player_attack1 (1)_4: -1533285415
+      skinny_player_attack1 (1)_5: -1309639898
+      skinny_player_attack1 (1)_6: 2050282259
+      skinny_player_attack1 (1)_7: 1531304653
+      skinny_player_attack1 (1)_8: 23772922
+      skinny_player_attack1 (1)_9: 1640446263
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

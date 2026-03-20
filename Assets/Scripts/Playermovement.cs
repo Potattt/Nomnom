@@ -4,7 +4,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed = 10f;
     public float jumpForce = 12f;
-
+    public Animator animator;
     public KeyCode leftKey;
     public KeyCode rightKey;
     public KeyCode jumpKey;
@@ -28,27 +28,29 @@ private float attackPosStartX;
 }
 
     void Update()
-    {
-        // Ground check
-        isGrounded = Physics2D.OverlapCircle(
-            groundCheck.position,
-            groundCheckRadius,
-            groundLayer
-        );
+{
+    isGrounded = Physics2D.OverlapCircle(
+        groundCheck.position,
+        groundCheckRadius,
+        groundLayer
+    );
 
-        float move = 0;
+    float move = 0;
 
-        if (Input.GetKey(leftKey)) move = -1;
-        if (Input.GetKey(rightKey)) move = 1;
+    if (Input.GetKey(leftKey)) move = -1;
+    if (Input.GetKey(rightKey)) move = 1;
 
-        rb.velocity = new Vector2(move * speed, rb.velocity.y);
+    rb.velocity = new Vector2(move * speed, rb.velocity.y);
 
-        if (Input.GetKeyDown(jumpKey) && isGrounded)
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+    // ✅ THIS FIXES YOUR ANIMATION
+    animator.SetFloat("Speed", Mathf.Abs(move));
 
-        if (move > 0 && !isFacingRight) Flip();
-        if (move < 0 && isFacingRight) Flip();
-    }
+    if (Input.GetKeyDown(jumpKey) && isGrounded)
+        rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+
+    if (move > 0 && !isFacingRight) Flip();
+    if (move < 0 && isFacingRight) Flip();
+}
 
     void Flip()
 {

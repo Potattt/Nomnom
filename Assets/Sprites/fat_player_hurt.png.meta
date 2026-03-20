@@ -1,16 +1,13 @@
 fileFormatVersion: 2
-guid: dcc954181d4244db68c28e4a1731d540
+guid: 8cad5915132214b7ab20e68ea22236c4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2390837555220959632
-    second: skinny_player_walk_0
+      213: -5614818842180150569
+    second: fat_player_hurt_0
   - first:
-      213: 1579133715912938672
-    second: skinny_player_walk_1
-  - first:
-      213: 7366511199669192762
-    second: skinny_player_walk_2
+      213: -2306259253850291792
+    second: fat_player_hurt_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -119,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: skinny_player_walk_0
+      name: fat_player_hurt_0
       rect:
         serializedVersion: 2
         x: 0
@@ -134,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 07e246529e902ded0800000000000000
-      internalID: -2390837555220959632
+      spriteID: 7da9ea9f2082412b0800000000000000
+      internalID: -5614818842180150569
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skinny_player_walk_1
+      name: fat_player_hurt_1
       rect:
         serializedVersion: 2
         x: 44
@@ -156,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0b455dd7fb53ae510800000000000000
-      internalID: 1579133715912938672
+      spriteID: 0b1cb4e7d658effd0800000000000000
+      internalID: -2306259253850291792
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skinny_player_walk_2
+      name: fat_player_hurt_2
       rect:
         serializedVersion: 2
         x: 0
@@ -176,10 +173,32 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a38083a18ea1b3660800000000000000
-      internalID: 7366511199669192762
+      spriteID: 73b104a864cf846bc8a5e1e3e6205859
+      internalID: 238038927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fat_player_hurt_3
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dc82e1f8d71148d68f8c9a1a6875246
+      internalID: -520879228
       vertices: []
       indices: 
       edges: []
@@ -188,7 +207,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 8dc2d48242dbe4d46ba8d8f7138a9ee1
+    spriteID: 8b4bf735d96d9469d88698268bf2db8d
     internalID: 0
     vertices: []
     indices: 
@@ -200,9 +219,10 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":2.0},"gridSpriteSize":{"x":44.0,"y":44.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      skinny_player_walk_0: -2390837555220959632
-      skinny_player_walk_1: 1579133715912938672
-      skinny_player_walk_2: 7366511199669192762
+      fat_player_hurt_0: -5614818842180150569
+      fat_player_hurt_1: -2306259253850291792
+      fat_player_hurt_2: 238038927
+      fat_player_hurt_3: -520879228
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
